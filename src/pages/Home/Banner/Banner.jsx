@@ -11,7 +11,7 @@ const Banner = () => {
             <div id="slide1" className="carousel-item relative w-full">
                 <img className='w-full rounded-xl'
                     src={img1} />
-                <div className="absolute h-full left-0 right- bottom-0 flex items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+                <div className="absolute h-full left-0 right- bottom-0 flex items-center rounded-xl bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                     <div className='text-white pl-8 space-y-7 w-1/2'>
                         <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of available, but the majority have suffered alteration in some form</p>
@@ -30,7 +30,7 @@ const Banner = () => {
                 <img 
                     src={img2}
                     className="w-full rounded-xl" />
-                <div className="absolute h-full left-0 right- bottom-0 flex items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+                <div className="absolute h-full left-0 right- bottom-0 flex items-center rounded-xl bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                     <div className='text-white pl-8 space-y-7 w-1/2'>
                         <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of available, but the majority have suffered alteration in some form</p>
@@ -48,7 +48,7 @@ const Banner = () => {
             <div id="slide3" className="carousel-item relative w-full">
                 <img className='w-full rounded-xl'
                     src={img3} />
-                <div className="absolute h-full left-0 right- bottom-0 flex items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+                <div className="absolute h-full left-0 right- bottom-0 flex items-center rounded-xl bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                     <div className='text-white pl-8 space-y-7 w-1/2'>
                         <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of available, but the majority have suffered alteration in some form</p>
@@ -67,7 +67,7 @@ const Banner = () => {
                 <img
                     src={img4}
                     className="w-full rounded-xl" />
-                <div className="absolute h-full left-0 right- bottom-0 flex items-center bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
+                <div className="absolute h-full left-0 right- bottom-0 flex items-center rounded-xl bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
                     <div className='text-white pl-8 space-y-7 w-1/2'>
                         <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of available, but the majority have suffered alteration in some form</p>
