@@ -3,6 +3,7 @@ import img from '../../assets/images/login/login.svg'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import axios from 'axios';
+import Cookies from 'js-cookie';
 
 
 const Login = () => {
@@ -28,10 +29,10 @@ const Login = () => {
                 // get access token
                 axios.post('http://localhost:5000/jwt', user, { withCredentials: true })
                     .then(res => {
-                        console.log(res.data);
-                        if (res.data.success) {
-                            navigate(location?.state ? location?.state : '/');
-                        }
+                        console.log(res.data.token);
+                        Cookies.set('token', res.data.token, { expires: 7 })
+                        navigate(location?.state ? location?.state : '/');
+
                     })
             })
             .catch(error => console.log(error));

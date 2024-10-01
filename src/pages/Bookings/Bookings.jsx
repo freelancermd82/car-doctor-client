@@ -3,6 +3,7 @@ import { AuthContext } from '../../provider/AuthProvider';
 import BookingRow from './BookingRow';
 import Swal from 'sweetalert2';
 import axios from 'axios';
+import Cookies from 'js-cookie';
 
 const Bookings = () => {
 
@@ -12,8 +13,12 @@ const Bookings = () => {
     const url = `http://localhost:5000/bookings?email=${user?.email}`;
 
     useEffect(() => {
-
-        axios.get(url, { withCredentials: true })
+        //console.log(Cookies.get('token'))
+        axios.get(url, {
+            headers: {
+                Authorization: 'Bearer ' + Cookies.get('token')
+            }
+        })
             .then(res => {
                 setBookings(res.data);
             })
@@ -22,7 +27,7 @@ const Bookings = () => {
         // fetch(url)
         //     .then(res => res.json())
         //     .then(data => setBookings(data));
-    }, [url]);
+    }, [url, Cookies.get('token')]);
 
 
 
